@@ -1,7 +1,7 @@
 {
   "name": "nexTrip",
   "version": "1.0.0",
-  "description": "Project which will tell you how long it is until the next bus on BUS ROUTE leaving from BUS STOP NAME going DIRECTION,
+  "description": "Project which will tell you how long it is until the next bus on BUS ROUTE leaving from BUS STOP NAME going DIRECTION",
   "main": "nexTrip.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
