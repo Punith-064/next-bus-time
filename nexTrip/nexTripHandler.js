@@ -21,7 +21,7 @@ async function nextBusTime(busRoute, busStop, direction) {
             if (responseDirectionValue) { // If there is any Direction value.
 				
                 // Function to get stop value. (Input :  routeId(o/p =checkRoute function), direction value(o/p =getDirection function) ,busStop ) 
-				let responseStopValue = await nexTripFunctions.getStops(responseRouteData.Route, responseDirectionValue.Value, busStop)
+		let responseStopValue = await nexTripFunctions.getStops(responseRouteData.Route, responseDirectionValue.Value, busStop)
                 if (responseStopValue) { // If there is any StopValue .
                     
 					// Function to get stop value. (Input :  routeId(o/p = checkRoute function), direction value(o/p = getDirection function) ,stopValue(o/p = getStops function) ) 
