@@ -25,7 +25,7 @@ async function nextBusTime(busRoute, busStop, direction) {
                 if (responseStopValue) { // If there is any StopValue .
                     
 					// Function to get stop value. (Input :  routeId(o/p = checkRoute function), direction value(o/p = getDirection function) ,stopValue(o/p = getStops function) ) 
-					let time = await nexTripFunctions.getTimepoint(responseRouteData.Route, responseDirectionValue.Value , responseStopValue.Value)
+		    let time = await nexTripFunctions.getTimepoint(responseRouteData.Route, responseDirectionValue.Value , responseStopValue.Value)
                     if (time) { // If there is time.
                         return time;
                     } else {
