@@ -7,7 +7,7 @@ const nexTripHandler = require('./nexTrip/nexTripHandler');
     // second argument is the location of the script you're executing.
 
     if (args.length < 3) // if less than 3 agruments process cannot be continued. 
-        console.error("Enter all 3 arguments   (Ex :node timeForNextBus.js <bus route> <bus stop name> <direction>")
+        console.error("Enter all 3 arguments   (Ex :node nexTrip.js <bus route> <bus stop name> <direction>")
     else {
         let busRoute = args[0];
         let busStop = args[1];
