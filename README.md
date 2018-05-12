@@ -9,7 +9,7 @@ Project which will tell you how long it is until the next bus on “BUS ROUTE”
 * node nexTrip.js  'bus route'   'bus stop name'   'direction' 
   
 ###  Prerequisites
-###### [Nodejs](https://nodejs.org/en/download/) (v7.6 or above) 
+###### * [Nodejs](https://nodejs.org/en/download/) (v7.6 or above) 
 
 ### Example
 ```
