@@ -5,8 +5,8 @@ const nexTripFunctions = require('./nexTripFunctions');
 /*
 Function    : Next bus time.
 Arguments   : 1) Bus route given by user (Ex : METRO Green Line ).
-			  2) Bus stop name given by user (Ex : Target Field Station Platform 1 ).
-			  3) Direction (Ex :'east')
+	      2) Bus stop name given by user (Ex : Target Field Station Platform 1 ).
+	      3) Direction (Ex :'east')
 Output      : Time in minutes or No bus .
 */
 async function nextBusTime(busRoute, busStop, direction) {
