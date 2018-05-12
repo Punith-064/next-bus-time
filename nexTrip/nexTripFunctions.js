@@ -30,7 +30,7 @@ async function checkRoute(busRoute) {
 /*
 Function    : get Direction.
 Arguments   : 1) routeid from function ==> checkRoute() (Ex:902).
-			  2) direction given by user (Ex : east ).
+	      2) direction given by user (Ex : east ).
 Output      : Valid direction information .
 */
 
@@ -54,8 +54,8 @@ async function getDirection(route, direction) {
 /*
 Function    : get Stops.
 Arguments   : 1) routeid from function ==> checkRoute() (Ex:902) .
-			  2) direction value from function ==> getDirection() (EX:1 ).
-			  3) busStop given by user (Ex : Target Field Station Platform 1 ).
+	      2) direction value from function ==> getDirection() (EX:1 ).
+	      3) busStop given by user (Ex : Target Field Station Platform 1 ).
 Output      : Valid direction information .
 */
 
@@ -79,8 +79,8 @@ async function getStops(route, directionValue, busStop) {
 /*
 Function    : Get Time point.
 Arguments   : 1) routeid from function ==> checkRoute() (Ex:902) .
-			  2) direction value from function ==> getDirection() (Ex:1 ).
-			  3) stopValue from function ==>  getStops() (Ex : 7SOL ).
+	      2) direction value from function ==> getDirection() (Ex:1 ).
+	      3) stopValue from function ==>  getStops() (Ex : 7SOL ).
 Output      : Time in minutes until the next bus.
 */
 async function getTimepoint(route, directionValue, stopValue) {
@@ -152,8 +152,8 @@ const getTimeStamp = (timeString) => {
 /*  Export all modules ( name<publicly usable name>  : value <function name> ) */
 
 module.exports = {
-    checkRoute: checkRoute,
+    checkRoute	: checkRoute,
     getDirection: getDirection,
-    getStops: getStops,
+    getStops	: getStops,
     getTimepoint: getTimepoint
 }
