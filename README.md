@@ -9,7 +9,7 @@ npm install       </br>
 node nexTrip.js  'bus route'   'bus stop name'   'direction' 
   
 #  Prerequisites
-###### nodejs 7.6 or above 
+###### nodejs (v7.6 or above) 
 
 ## Example
 ```
