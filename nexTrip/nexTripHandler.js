@@ -12,11 +12,11 @@ Output      : Time in minutes or No bus .
 async function nextBusTime(busRoute, busStop, direction) {
     try {
 		
-		// Function to get route data. (Input : busroute )
+	// Function to get route data. (Input : busroute )
         let responseRouteData = await nexTripFunctions.checkRoute(busRoute); 
         if (responseRouteData) { // If there is any response route  data 
 			
-			// Function to get direction value. (Input : routeId(o/p = checkRoute function) , direction  )
+	    // Function to get direction value. (Input : routeId(o/p = checkRoute function) , direction  )
             let responseDirectionValue = await nexTripFunctions.getDirection(responseRouteData.Route, direction);
             if (responseDirectionValue) { // If there is any Direction value.
 				
@@ -24,7 +24,7 @@ async function nextBusTime(busRoute, busStop, direction) {
 		let responseStopValue = await nexTripFunctions.getStops(responseRouteData.Route, responseDirectionValue.Value, busStop)
                 if (responseStopValue) { // If there is any StopValue .
                     
-					// Function to get stop value. (Input :  routeId(o/p = checkRoute function), direction value(o/p = getDirection function) ,stopValue(o/p = getStops function) ) 
+		   // Function to get stop value. (Input :  routeId(o/p = checkRoute function), direction value(o/p = getDirection function) ,stopValue(o/p = getStops function) ) 
 		    let time = await nexTripFunctions.getTimepoint(responseRouteData.Route, responseDirectionValue.Value , responseStopValue.Value)
                     if (time) { // If there is time.
                         return time;
