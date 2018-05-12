@@ -9,14 +9,14 @@ const nexTripHandler = require('./nexTrip/nexTripHandler');
     if (args.length < 3) // if less than 3 agruments process cannot be continued. 
         console.error("Enter all 3 arguments   (Ex :node nexTrip.js '<bus route>' '<bus stop name>' '<direction>'")
     else {
-        let busRoute = args[0];
-        let busStop = args[1];
-        let direction = args[2];
+        let busRoute    = args[0]; // first argument is BusRoute
+        let busStop     = args[1]; // Second argument in bus top
+        let direction   = args[2]; // Third argument would be direction.
+        
+        // Handler function (nextBusTime) , to get the time in minutes of next bus.
         let nextBusTime = nexTripHandler.nextBusTime(busRoute, busStop, direction)
 
-
-
-        nextBusTime.then((result) => {
+        nextBusTime.then((result) => {            
             console.log(result) //will log results.
         });
 
