@@ -9,9 +9,17 @@ npm install       </br>
 node nexTrip.js  'bus route'   'bus stop name'   'direction' 
   
 #  Prerequisites
-###### nodejs (v7.6 or above) 
+###### [Nodejs](https://nodejs.org/en/download/) (v7.6 or above) 
 
 ## Example
 ```
 $ node nexTrip.js 'METRO Blue Line' 'Target Field Station Platform 1' 'south'
 ```
+
+## Built With
+
+* [Nodejs](https://nodejs.org/en/download/) - JavaScript run-time environment
+
+## Author
+
+* **Punith B.P**
